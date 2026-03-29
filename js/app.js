@@ -1,6 +1,3 @@
-/* ============================================================
-   NAVIGATION — scroll tint + mobile menu
-   ============================================================ */
 const nav = document.getElementById('nav');
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
@@ -16,7 +13,7 @@ hamburger.addEventListener('click', () => {
     document.body.style.overflow = open ? 'hidden' : '';
 });
 
-// Close mobile menu on link click
+
 navLinks.querySelectorAll('.nav__link').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('open');
@@ -26,14 +23,12 @@ navLinks.querySelectorAll('.nav__link').forEach(link => {
     });
 });
 
-/* ============================================================
-   SCROLL REVEAL — staggered entrance
-   ============================================================ */
+
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) return;
 
-        // Stagger siblings inside same parent
+        
         const siblings = Array.from(entry.target.parentElement.querySelectorAll('.reveal'));
         const idx = siblings.indexOf(entry.target);
         entry.target.style.transitionDelay = `${idx * 80}ms`;
@@ -44,9 +39,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-/* ============================================================
-   HERO TYPING ANIMATION
-   ============================================================ */
 const roles = [
     'modern web apps.',
     'clean APIs.',
@@ -88,13 +80,10 @@ if (roleEl) {
         setTimeout(typeStep, deleting ? 45 : 75);
     }
 
-    // Small initial delay so hero entrance animation plays first
+    
     setTimeout(typeStep, 1000);
 }
 
-/* ============================================================
-   ACTIVE NAV LINK — highlight section in view
-   ============================================================ */
 const sections = document.querySelectorAll('section[id]');
 const navLinkEls = document.querySelectorAll('.nav__link:not(.nav__cta)');
 
@@ -112,9 +101,6 @@ const sectionObserver = new IntersectionObserver((entries) => {
 
 sections.forEach(s => sectionObserver.observe(s));
 
-/* ============================================================
-   HERO PARALLAX — subtle orb movement on mousemove
-   ============================================================ */
 const orbs = document.querySelectorAll('.hero__orb');
 
 document.querySelector('.hero')?.addEventListener('mousemove', (e) => {
