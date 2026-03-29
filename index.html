@@ -7,8 +7,9 @@
     <meta name="description" content="CJ — Full-Stack Developer and School of Code Graduate. Building modern web experiences.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
 
@@ -36,6 +37,10 @@
         <div class="hero__orb hero__orb--3"></div>
         <div class="hero__grid-overlay"></div>
 
+        <div class="hero__photo" aria-hidden="true">
+            <img src="images/CJ.jpg" alt="">
+        </div>
+
         <div class="hero__content">
             <p class="hero__eyebrow reveal">Hi, I'm Chris, but please, call me ...</p>
             <h1 class="hero__name reveal">CJ</h1>
@@ -43,7 +48,7 @@
                 <span class="hero__role-static">I build&nbsp;</span>
                 <span class="hero__role-dynamic" id="roleText"></span><span class="blink-cursor">|</span>
             </p>
-            <p class="hero__tagline reveal">School of Code Graduate — crafting clean, modern web experiences that people actually enjoy using.</p>
+            <p class="hero__tagline reveal">School of Code & IBT Learning Graduate — crafting clean, modern web experiences that people actually enjoy using. Now on my AI journey with Netcom and from there onto Teaching those the skills I've learned.</p>
             <div class="hero__ctas reveal">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-ghost">Get In Touch</a>
@@ -64,14 +69,14 @@
                     <p class="eyebrow reveal">About Me</p>
                     <h2 class="section-title reveal">Turning ideas into <span class="grad-text">reality</span></h2>
                     <p class="body-text reveal">
-                        I'm a full-stack developer and proud School of Code graduate. Over 13 intensive weeks I went from HTML basics to building and deploying full-stack applications — collaborating in agile teams, designing experiences from scratch, and shipping real products.
+                        I'm a full-stack developer and proud School of Code graduate. Across 28 weeks of intensive training — 13 at School of Code and 15 with IBT Learning — I went from HTML basics to building full-stack applications and designing polished UX/UI experiences. I'm currently deepening my expertise further with Netcom Training's Intel AI for the Current Workforce programme.
                     </p>
                     <p class="body-text reveal">
                         I love the intersection of clean code and great design. Whether it's a pixel-perfect UI or a robust backend API, I care deeply about building things that work beautifully.
                     </p>
                     <div class="stats reveal">
                         <div class="stat">
-                            <span class="stat__num">13</span>
+                            <span class="stat__num" id="weeks-stat">28+</span>
                             <span class="stat__lbl">Weeks Training</span>
                         </div>
                         <div class="stat">
@@ -90,7 +95,7 @@
                 </div>
                 <div class="about__img-col reveal">
                     <div class="about__img-frame">
-                        <img src="images/CJ.jpg" alt="CJ" class="about__img" loading="lazy">
+                        <img src="images/cjc.jpg" alt="CJ" class="about__img" loading="lazy">
                     </div>
                     <div class="about__badges">
                         <div class="about__badge">
@@ -121,47 +126,143 @@
             <h2 class="section-title reveal">My <span class="grad-text">Toolkit</span></h2>
             <p class="section-subtitle reveal">Technologies and practices I've worked with across the stack.</p>
 
-            <div class="skills__grid">
-                <div class="skill-card reveal">
-                    <div class="skill-card__icon">🎨</div>
-                    <h3 class="skill-card__title">Frontend</h3>
-                    <ul class="skill-list">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React</li>
-                        <li>Responsive Design</li>
-                        <li>UI / UX Design</li>
-                        <li>Figma</li>
-                    </ul>
+            <!-- Skills Crawl -->
+            <div class="crawl-viewport">
+                <div class="crawl-tilt">
+                    <div class="crawl-scroll">
+
+                        <div class="crawl-group">
+                            <p class="crawl-category">Frontend</p>
+                            <p class="crawl-item">Responsive Design</p>
+                            <p class="crawl-item">Component Architecture</p>
+                            <p class="crawl-item">State Management</p>
+                            <p class="crawl-item">Web Accessibility</p>
+                            <p class="crawl-item">Performance Optimisation</p>
+                        </div>
+
+                        <p class="crawl-sep">✦</p>
+
+                        <div class="crawl-group">
+                            <p class="crawl-category">Backend</p>
+                            <p class="crawl-item">REST APIs</p>
+                            <p class="crawl-item">JWT Authentication</p>
+                            <p class="crawl-item">OAuth</p>
+                            <p class="crawl-item">Database Design</p>
+                            <p class="crawl-item">Server-Side Rendering</p>
+                        </div>
+
+                        <p class="crawl-sep">✦</p>
+
+                        <div class="crawl-group">
+                            <p class="crawl-category">UX / UI Design</p>
+                            <p class="crawl-item">Wireframing</p>
+                            <p class="crawl-item">Prototyping</p>
+                            <p class="crawl-item">User Research</p>
+                            <p class="crawl-item">Accessibility (WCAG)</p>
+                            <p class="crawl-item">Design Systems</p>
+                        </div>
+
+                        <p class="crawl-sep">✦</p>
+
+                        <div class="crawl-group">
+                            <p class="crawl-category">Data &amp; AI</p>
+                            <p class="crawl-item">Tableau</p>
+                            <p class="crawl-item">No-Code Tools</p>
+                            <p class="crawl-item">AI Workflows</p>
+                            <p class="crawl-item">Prompt Engineering</p>
+                            <p class="crawl-item">Data Visualisation</p>
+                        </div>
+
+                        <p class="crawl-sep">✦</p>
+
+                        <div class="crawl-group">
+                            <p class="crawl-category">Dev Practices</p>
+                            <p class="crawl-item">Test-Driven Development</p>
+                            <p class="crawl-item">Agile / Scrum</p>
+                            <p class="crawl-item">CI/CD</p>
+                            <p class="crawl-item">Pair Programming</p>
+                            <p class="crawl-item">Code Review</p>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="skill-card reveal">
-                    <div class="skill-card__icon">⚙️</div>
-                    <h3 class="skill-card__title">Backend</h3>
-                    <ul class="skill-list">
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>PostgreSQL</li>
-                        <li>REST APIs</li>
-                        <li>JWT Authentication</li>
-                        <li>OAuth</li>
-                        <li>Database Design</li>
+            </div>
+
+            <!-- Tech Logo Ribbon -->
+            <p class="ribbon-label">Languages &amp; Tools I've Worked With</p>
+            <div class="logo-ribbon" aria-hidden="true">
+                <div class="logo-ribbon__track">
+                    <ul class="logo-ribbon__list">
+                        <li class="ribbon-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></li>
+                        <li class="ribbon-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></li>
+                        <li class="ribbon-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
+                        <li class="ribbon-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></li>
+                        <li class="ribbon-item"><i class="devicon-react-original colored"></i><span>React</span></li>
+                        <li class="ribbon-item"><i class="devicon-svelte-plain colored"></i><span>Svelte</span></li>
+                        <li class="ribbon-item"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind</span></li>
+                        <li class="ribbon-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></li>
+                        <li class="ribbon-item"><i class="devicon-express-original"></i><span>Express</span></li>
+                        <li class="ribbon-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></li>
+                        <li class="ribbon-item"><i class="devicon-figma-plain colored"></i><span>Figma</span></li>
+                        <li class="ribbon-item"><i class="devicon-xd-plain colored"></i><span>Adobe XD</span></li>
+                        <li class="ribbon-item"><i class="devicon-photoshop-plain colored"></i><span>Photoshop</span></li>
+                        <li class="ribbon-item"><i class="devicon-aftereffects-plain colored"></i><span>After Effects</span></li>
+                        <li class="ribbon-item"><img src="images/id.png" alt="Adobe InDesign"><span>InDesign</span></li>
+                        <li class="ribbon-item"><img src="images/au.png" alt="Adobe Audition"><span>Audition</span></li>
+                        <li class="ribbon-item"><i class="devicon-dreamweaver-plain colored"></i><span>Dreamweaver</span></li>
+                        <li class="ribbon-item"><i class="devicon-blender-original colored"></i><span>Blender</span></li>
+                        <li class="ribbon-item"><i class="devicon-unrealengine-original"></i><span>Unreal Engine</span></li>
+                        <li class="ribbon-item"><i class="devicon-godot-plain colored"></i><span>Godot</span></li>
+                        <li class="ribbon-item"><i class="devicon-androidstudio-plain colored"></i><span>Android Studio</span></li>
+                        <li class="ribbon-item"><i class="devicon-git-plain colored"></i><span>Git</span></li>
+                        <li class="ribbon-item"><i class="devicon-github-original"></i><span>GitHub</span></li>
+                        <li class="ribbon-item"><i class="devicon-jest-plain colored"></i><span>Jest</span></li>
+                        <li class="ribbon-item"><i class="devicon-googlecolab-plain colored"></i><span>Colab</span></li>
+                        <li class="ribbon-item"><i class="devicon-python-plain colored"></i><span>Python</span></li>
+                        <li class="ribbon-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></li>
+                        <li class="ribbon-item"><i class="devicon-vscodium-plain colored"></i><span>VSCodium</span></li>
+                        <li class="ribbon-item"><img src="images/invokeai_227481.png" alt="InvokeAI"><span>InvokeAI</span></li>
+                        <li class="ribbon-item"><img src="images/NPM.png" alt="NPM"><span>NPM</span></li>
+                        <li class="ribbon-item"><img src="images/Pip.png" alt="PIP"><span>PIP</span></li>
+                        <li class="ribbon-item"><i class="devicon-miro-plain colored"></i><span>Miro</span></li>
                     </ul>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-card__icon">🛠️</div>
-                    <h3 class="skill-card__title">Tools & Practices</h3>
-                    <ul class="skill-list">
-                        <li>Git & GitHub</li>
-                        <li>Jest & TDD</li>
-                        <li>Agile / Scrum</li>
-                        <li>CI/CD</li>
-                        <li>Cloud Deployment</li>
-                        <li>Pair Programming</li>
-                        <li>Code Review</li>
+                    <ul class="logo-ribbon__list" aria-hidden="true">
+                        <li class="ribbon-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></li>
+                        <li class="ribbon-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></li>
+                        <li class="ribbon-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
+                        <li class="ribbon-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></li>
+                        <li class="ribbon-item"><i class="devicon-react-original colored"></i><span>React</span></li>
+                        <li class="ribbon-item"><i class="devicon-svelte-plain colored"></i><span>Svelte</span></li>
+                        <li class="ribbon-item"><i class="devicon-tailwindcss-plain colored"></i><span>Tailwind</span></li>
+                        <li class="ribbon-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></li>
+                        <li class="ribbon-item"><i class="devicon-express-original"></i><span>Express</span></li>
+                        <li class="ribbon-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></li>
+                        <li class="ribbon-item"><i class="devicon-figma-plain colored"></i><span>Figma</span></li>
+                        <li class="ribbon-item"><i class="devicon-xd-plain colored"></i><span>Adobe XD</span></li>
+                        <li class="ribbon-item"><i class="devicon-photoshop-plain colored"></i><span>Photoshop</span></li>
+                        <li class="ribbon-item"><i class="devicon-aftereffects-plain colored"></i><span>After Effects</span></li>
+                        <li class="ribbon-item"><img src="images/id.png" alt="Adobe InDesign"><span>InDesign</span></li>
+                        <li class="ribbon-item"><img src="images/au.png" alt="Adobe Audition"><span>Audition</span></li>
+                        <li class="ribbon-item"><i class="devicon-dreamweaver-plain colored"></i><span>Dreamweaver</span></li>
+                        <li class="ribbon-item"><i class="devicon-blender-original colored"></i><span>Blender</span></li>
+                        <li class="ribbon-item"><i class="devicon-unrealengine-original"></i><span>Unreal Engine</span></li>
+                        <li class="ribbon-item"><i class="devicon-godot-plain colored"></i><span>Godot</span></li>
+                        <li class="ribbon-item"><i class="devicon-androidstudio-plain colored"></i><span>Android Studio</span></li>
+                        <li class="ribbon-item"><i class="devicon-git-plain colored"></i><span>Git</span></li>
+                        <li class="ribbon-item"><i class="devicon-github-original"></i><span>GitHub</span></li>
+                        <li class="ribbon-item"><i class="devicon-jest-plain colored"></i><span>Jest</span></li>
+                        <li class="ribbon-item"><i class="devicon-googlecolab-plain colored"></i><span>Colab</span></li>
+                        <li class="ribbon-item"><i class="devicon-python-plain colored"></i><span>Python</span></li>
+                        <li class="ribbon-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></li>
+                        <li class="ribbon-item"><i class="devicon-vscodium-plain colored"></i><span>VSCodium</span></li>
+                        <li class="ribbon-item"><img src="images/invokeai_227481.png" alt="InvokeAI"><span>InvokeAI</span></li>
+                        <li class="ribbon-item"><img src="images/NPM.png" alt="NPM"><span>NPM</span></li>
+                        <li class="ribbon-item"><img src="images/Pip.png" alt="PIP"><span>PIP</span></li>
+                        <li class="ribbon-item"><i class="devicon-miro-plain colored"></i><span>Miro</span></li>
                     </ul>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -170,50 +271,41 @@
         <div class="container">
             <p class="eyebrow reveal">What I've Built</p>
             <h2 class="section-title reveal">Featured <span class="grad-text">Projects</span></h2>
-            <p class="section-subtitle reveal">A selection of work from School of Code and beyond.</p>
+            <p class="section-subtitle reveal">A curated selection of the work I enjoyed creating / CoCreating</p>
 
             <div class="projects__grid">
 
                 <!-- Featured card -->
-                <article class="proj-card proj-card--featured reveal">
-                    <div class="proj-card__img-wrap">
-                        <img src="images/Projects.png" alt="SnippetSamurai" loading="lazy">
-                        <div class="proj-card__overlay">
-                            <a href="#" class="proj-card__eye" title="View live">↗</a>
-                        </div>
+                <article class="proj-card proj-card--featured proj-card--cc reveal">
+                    <div class="proj-card__img-wrap proj-card__img-wrap--cc">
+                        <img src="images/companion-cove-bg.jpg" alt="Companion Cove background" loading="lazy" class="proj-card__bg">
+                        <img src="images/companion-cove-logo.png" alt="Companion Cove" class="proj-card__logo-overlay">
                     </div>
                     <div class="proj-card__body">
-                        <span class="proj-card__label">Featured Project</span>
-                        <h3 class="proj-card__title">SnippetSamurai</h3>
-                        <p class="proj-card__desc">A full-stack collaborative platform for saving, tagging and sharing code snippets. Built with a team during School of Code — from user research and wireframes all the way to a deployed product.</p>
+                        <span class="proj-card__label proj-card__label--dev">In Development</span>
+                        <h3 class="proj-card__title">Companion Cove</h3>
+                        <p class="proj-card__desc">A local-first AI companion app that runs entirely on your own machine — no subscriptions, no cloud. Chat with customisable AI characters powered by Ollama, with optional voice via Kokoro TTS, voice input via faster-whisper, and AI-generated character images through InvokeAI.</p>
                         <div class="tag-row">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">JWT</span>
-                        </div>
-                        <div class="proj-card__links">
-                            <a href="#" class="btn btn-primary btn-sm">Live Demo ↗</a>
-                            <a href="#" class="btn btn-ghost btn-sm">GitHub →</a>
+                            <span class="tag">SvelteKit</span>
+                            <span class="tag">Bun</span>
+                            <span class="tag">Hono</span>
+                            <span class="tag">Ollama</span>
+                            <span class="tag">TypeScript</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Card 2 -->
+                <!-- Card 2 — NASA -->
                 <article class="proj-card reveal">
                     <div class="proj-card__img-wrap proj-card__img-wrap--placeholder">
-                        <span class="proj-emoji">🌦️</span>
-                        <div class="proj-card__overlay">
-                            <a href="#" class="proj-card__eye" title="View live">↗</a>
-                        </div>
+                        <span class="proj-emoji">🚀</span>
                     </div>
                     <div class="proj-card__body">
-                        <span class="proj-card__label">Week 2 Project</span>
-                        <h3 class="proj-card__title">Weather Dashboard</h3>
-                        <p class="proj-card__desc">A dynamic weather app fetching live data from OpenWeather API. Handles async operations cleanly and presents conditions in a minimal UI.</p>
+                        <h3 class="proj-card__title">NASA Explorer</h3>
+                        <p class="proj-card__desc">An interactive space exploration app pulling live data from NASA's public APIs — Astronomy Picture of the Day, Mars Rover imagery, and near-Earth object tracking.</p>
                         <div class="tag-row">
                             <span class="tag">JavaScript</span>
+                            <span class="tag">NASA API</span>
                             <span class="tag">Fetch API</span>
                             <span class="tag">Async/Await</span>
                         </div>
@@ -223,23 +315,38 @@
                     </div>
                 </article>
 
-                <!-- Card 3 -->
+                <!-- Card 3 — SnippetSamurai -->
                 <article class="proj-card reveal">
                     <div class="proj-card__img-wrap proj-card__img-wrap--placeholder proj-card__img-wrap--cyan">
-                        <span class="proj-emoji">🔐</span>
-                        <div class="proj-card__overlay">
-                            <a href="#" class="proj-card__eye" title="View live">↗</a>
-                        </div>
+                        <span class="proj-emoji">⚔️</span>
                     </div>
                     <div class="proj-card__body">
-                        <span class="proj-card__label">Week 10 Project</span>
-                        <h3 class="proj-card__title">Auth REST API</h3>
-                        <p class="proj-card__desc">A secure RESTful API with JWT auth, bcrypt password hashing, protected routes, and full CRUD against a PostgreSQL database.</p>
+                        <h3 class="proj-card__title">SnippetSamurai</h3>
+                        <p class="proj-card__desc">A full-stack collaborative platform for saving, tagging and sharing code snippets. Built with a team — from user research and wireframes all the way to a deployed product.</p>
                         <div class="tag-row">
+                            <span class="tag">React</span>
                             <span class="tag">Node.js</span>
                             <span class="tag">Express</span>
-                            <span class="tag">JWT</span>
                             <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="proj-card__links">
+                            <a href="#" class="btn btn-ghost btn-sm">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 — 1Source -->
+                <article class="proj-card reveal">
+                    <div class="proj-card__img-wrap">
+                        <img src="images/1source.png" alt="1Source" loading="lazy">
+                    </div>
+                    <div class="proj-card__body">
+                        <h3 class="proj-card__title">1Source</h3>
+                        <p class="proj-card__desc">A unified resource hub designed to consolidate learning materials, tools, and references into a single accessible platform for developers and students.</p>
+                        <div class="tag-row">
+                            <span class="tag">UX/UI Design</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Prototyping</span>
                         </div>
                         <div class="proj-card__links">
                             <a href="#" class="btn btn-ghost btn-sm">GitHub →</a>
@@ -254,11 +361,24 @@
     <!-- JOURNEY -->
     <section class="section journey" id="journey">
         <div class="container">
-            <p class="eyebrow reveal">School of Code</p>
+            <p class="eyebrow reveal">My Learning Path</p>
             <h2 class="section-title reveal">My <span class="grad-text">Journey</span></h2>
-            <p class="section-subtitle reveal">13 weeks. 4 phases. A complete transformation.</p>
+            <p class="section-subtitle reveal">Three programmes. Every step documented.</p>
 
-            <div class="phase-row reveal">
+            <!-- SoC Accordion -->
+            <div class="accordion reveal">
+                <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-soc">
+                    <span class="accordion__label">
+                        <span class="accordion__eyebrow">2024</span>
+                        School of Code
+                    </span>
+                    <span class="accordion__meta">13 weeks · Full-Stack</span>
+                    <span class="accordion__hint">Click to explore</span>
+                    <span class="accordion__chevron">▾</span>
+                </button>
+                <div class="accordion__body accordion__body--closed" id="acc-soc">
+
+            <div class="phase-row">
                 <span class="phase-badge phase-badge--f">Phase 1: Foundations</span>
                 <span class="phase-badge phase-badge--b">Phase 2: Broadening</span>
                 <span class="phase-badge phase-badge--fs">Phase 3: Full-Stack</span>
@@ -509,17 +629,22 @@
                 </div>
 
             </div>
-        </div>
-    </section>
+                </div><!-- /.accordion__body -->
+            </div><!-- /.accordion (SoC) -->
 
-    <!-- IBT LEARNING -->
-    <section class="section ibt" id="ibt">
-        <div class="container">
-            <p class="eyebrow reveal">IBT Learning · 2024</p>
-            <h2 class="section-title reveal">UX / UI Design <span class="grad-text">Bootcamp</span></h2>
-            <p class="section-subtitle reveal">A structured deep-dive into user experience and interface design — from research and empathy through to high-fidelity prototypes and a graduation project.</p>
+            <div class="accordion reveal">
+                <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-ibt">
+                    <span class="accordion__label">
+                        <span class="accordion__eyebrow">2024</span>
+                        IBT Learning — UX/UI Design Bootcamp
+                    </span>
+                    <span class="accordion__meta">6 modules · UX/UI Design</span>
+                    <span class="accordion__hint">Click to explore</span>
+                    <span class="accordion__chevron">▾</span>
+                </button>
+                <div class="accordion__body accordion__body--closed" id="acc-ibt">
 
-            <div class="phase-row reveal">
+            <div class="phase-row">
                 <span class="phase-badge phase-badge--f">Module 1–2: Foundations</span>
                 <span class="phase-badge phase-badge--b">Module 3: Research</span>
                 <span class="phase-badge phase-badge--fs">Module 4–5: Design</span>
@@ -642,17 +767,22 @@
                 </div>
 
             </div>
-        </div>
-    </section>
+                </div><!-- /.accordion__body -->
+            </div><!-- /.accordion (IBT) -->
 
-    <!-- NETCOM TRAINING -->
-    <section class="section netcom" id="netcom">
-        <div class="container">
-            <p class="eyebrow reveal">Netcom Training · Feb – Apr 2025</p>
-            <h2 class="section-title reveal">Intel: AI for the <span class="grad-text">Current Workforce</span></h2>
-            <p class="section-subtitle reveal">A three-level programme covering AI fundamentals, hands-on technical modules, and entrepreneurial venture-building skills.</p>
+            <div class="accordion reveal">
+                <button class="accordion__trigger" aria-expanded="false" aria-controls="acc-netcom">
+                    <span class="accordion__label">
+                        <span class="accordion__eyebrow">Feb – Apr 2025</span>
+                        Netcom Training — Intel: AI for the Current Workforce
+                    </span>
+                    <span class="accordion__meta">3 levels · In Progress</span>
+                    <span class="accordion__hint">Click to explore</span>
+                    <span class="accordion__chevron">▾</span>
+                </button>
+                <div class="accordion__body accordion__body--closed" id="acc-netcom">
 
-            <div class="phase-row reveal">
+            <div class="phase-row">
                 <span class="phase-badge phase-badge--f">Level 100: Foundations</span>
                 <span class="phase-badge phase-badge--b">Level 200: Technical</span>
                 <span class="phase-badge phase-badge--fs">Level 300: Venture</span>
@@ -888,8 +1018,6 @@
                 </div>
 
             </div>
-        </div>
-    </section>
 
     <style>
         .netcom { background: var(--bg-0); }
@@ -932,6 +1060,11 @@
             filter: grayscale(1);
         }
     </style>
+
+                </div><!-- /.accordion__body -->
+            </div><!-- /.accordion (Netcom) -->
+        </div>
+    </section>
 
     <!-- CONTACT -->
     <section class="section contact" id="contact">
@@ -1025,6 +1158,112 @@
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') document.getElementById('email-modal').classList.remove('is-open');
         });
+    </script>
+
+    <style>
+        /* ── Accordion ── */
+        .accordion {
+            border: 1px solid var(--border);
+            border-radius: var(--r);
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+        .accordion__trigger {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.25rem 1.5rem;
+            background: var(--surface);
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            color: var(--text-1);
+            font-family: var(--font-b);
+            transition: background var(--t);
+        }
+        .accordion__trigger:hover { background: var(--surface-h); }
+        .accordion__trigger[aria-expanded="true"] { border-bottom: 1px solid var(--border); }
+        .accordion__label {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+            flex: 1;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+        .accordion__eyebrow {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--violet-lt);
+        }
+        .accordion__meta {
+            font-size: 0.82rem;
+            color: var(--text-2);
+            margin-left: auto;
+            white-space: nowrap;
+        }
+        .accordion__hint {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--cyan);
+            letter-spacing: 0.04em;
+            white-space: nowrap;
+            opacity: 1;
+            transition: opacity 0.2s ease;
+        }
+        .accordion__trigger[aria-expanded="true"] .accordion__hint {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .accordion__chevron {
+            font-size: 1.5rem;
+            color: var(--violet-lt);
+            transition: transform var(--t), color var(--t);
+            margin-left: 0.25rem;
+        }
+        .accordion__trigger:hover .accordion__chevron { color: var(--cyan); }
+        .accordion__trigger[aria-expanded="true"] .accordion__chevron {
+            transform: rotate(180deg);
+            color: var(--cyan);
+        }
+        .accordion__body {
+            overflow: hidden;
+            padding: 1.5rem;
+            transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1),
+                        opacity 0.35s ease,
+                        padding 0.35s ease;
+            max-height: 9999px;
+            opacity: 1;
+        }
+        .accordion__body--closed {
+            max-height: 0;
+            opacity: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    </style>
+
+    <script>
+        document.querySelectorAll('.accordion__trigger').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const expanded = btn.getAttribute('aria-expanded') === 'true';
+                const body = document.getElementById(btn.getAttribute('aria-controls'));
+                btn.setAttribute('aria-expanded', String(!expanded));
+                body.classList.toggle('accordion__body--closed', expanded);
+            });
+        });
+    </script>
+
+    <script>
+        // 28 weeks (SoC 13 + IBT 15) + weeks elapsed since Netcom start (Feb 1 2026)
+        const netcomStart = new Date('2026-02-01');
+        const msPerWeek = 1000 * 60 * 60 * 24 * 7;
+        const netcomWeeks = Math.floor((Date.now() - netcomStart.getTime()) / msPerWeek);
+        const total = 28 + Math.max(0, netcomWeeks);
+        document.getElementById('weeks-stat').textContent = total + '+';
     </script>
 
     <script src="js/app.js"></script>
