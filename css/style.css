@@ -295,16 +295,6 @@ ul { list-style: none; }
     padding-inline: clamp(1.25rem, 5vw, 3rem);
     overflow: hidden;
 }
-.hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(to right, var(--bg-0) 25%, rgba(26,32,53,0.75) 45%, transparent 70%),
-        linear-gradient(to top, var(--bg-0) 0%, transparent 22%);
-    z-index: 1;
-    pointer-events: none;
-}
 
 /* Dot grid */
 .hero__grid-overlay {
@@ -360,8 +350,15 @@ ul { list-style: none; }
     right: 0;
     width: 60%;
     height: 100%;
-    overflow: hidden;
     z-index: 0;
+    -webkit-mask-image:
+        linear-gradient(to right,  transparent 0%,   black 35%),
+        linear-gradient(to top,    transparent 0%,   black 25%);
+    -webkit-mask-composite: source-in;
+    mask-image:
+        linear-gradient(to right,  transparent 0%,   black 35%),
+        linear-gradient(to top,    transparent 0%,   black 25%);
+    mask-composite: intersect;
 }
 .hero__photo img {
     width: 100%;
@@ -370,17 +367,10 @@ ul { list-style: none; }
     object-position: top center;
     transform: scaleX(-1);
 }
-.hero__photo::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, var(--bg-0) 0%, transparent 30%);
-    z-index: 1;
-}
 
 .hero__content {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     max-width: 860px;
     width: 100%;
     margin: 0 auto;
@@ -1146,11 +1136,14 @@ ul { list-style: none; }
     .hamburger { display: flex; }
 
     .hero__name { letter-spacing: -3px; }
-    .hero__photo { width: 75%; }
-    .hero::before {
-        background:
-            linear-gradient(to right, var(--bg-0) 30%, rgba(26,32,53,0.85) 55%, transparent 80%),
-            linear-gradient(to top, var(--bg-0) 0%, transparent 20%);
+    .hero__photo {
+        width: 80%;
+        -webkit-mask-image:
+            linear-gradient(to right, transparent 0%, black 45%),
+            linear-gradient(to top,   transparent 0%, black 25%);
+        mask-image:
+            linear-gradient(to right, transparent 0%, black 45%),
+            linear-gradient(to top,   transparent 0%, black 25%);
     }
 
     .crawl-scroll { padding: 0 3%; }
