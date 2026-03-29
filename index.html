@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ — Full-Stack Developer</title>
+    <meta name="description" content="CJ — Full-Stack Developer and School of Code Graduate. Building modern web experiences.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__logo">Chris 'CJ' Chapman<span class="accent-dot">.</span></a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#journey" class="nav__link">Journey</a></li>
+                <li><a href="#contact" class="nav__link nav__cta">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+        <div class="hero__grid-overlay"></div>
+
+        <div class="hero__content">
+            <p class="hero__eyebrow reveal">Hi, I'm Chris, but please, call me ...</p>
+            <h1 class="hero__name reveal">CJ</h1>
+            <p class="hero__role reveal">
+                <span class="hero__role-static">I build&nbsp;</span>
+                <span class="hero__role-dynamic" id="roleText"></span><span class="blink-cursor">|</span>
+            </p>
+            <p class="hero__tagline reveal">School of Code Graduate — crafting clean, modern web experiences that people actually enjoy using.</p>
+            <div class="hero__ctas reveal">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-hint" aria-label="Scroll down">
+            <span class="scroll-hint__label">Scroll</span>
+            <div class="scroll-hint__line"></div>
+        </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__text-col">
+                    <p class="eyebrow reveal">About Me</p>
+                    <h2 class="section-title reveal">Turning ideas into <span class="grad-text">reality</span></h2>
+                    <p class="body-text reveal">
+                        I'm a full-stack developer and proud School of Code graduate. Over 13 intensive weeks I went from HTML basics to building and deploying full-stack applications — collaborating in agile teams, designing experiences from scratch, and shipping real products.
+                    </p>
+                    <p class="body-text reveal">
+                        I love the intersection of clean code and great design. Whether it's a pixel-perfect UI or a robust backend API, I care deeply about building things that work beautifully.
+                    </p>
+                    <div class="stats reveal">
+                        <div class="stat">
+                            <span class="stat__num">13</span>
+                            <span class="stat__lbl">Weeks Training</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__num">30+</span>
+                            <span class="stat__lbl">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__num">20+</span>
+                            <span class="stat__lbl">Technologies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__num">1</span>
+                            <span class="stat__lbl">Live Product</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__img-col reveal">
+                    <div class="about__img-frame">
+                        <img src="images/CJ.jpg" alt="CJ" class="about__img" loading="lazy">
+                    </div>
+                    <div class="about__badges">
+                        <div class="about__badge">
+                            <img src="images/SoC Logo.png" alt="School of Code" class="about__badge-icon">
+                            <span>SoC</span>
+                            <span>Graduate</span>
+                        </div>
+                        <div class="about__badge about__badge--ibt">
+                            <img src="images/IBT.png" alt="IBT Learning" class="about__badge-icon">
+                            <span>IBT</span>
+                            <span>Graduate</span>
+                        </div>
+                        <div class="about__badge about__badge--netcom">
+                            <img src="images/Netcom.png" alt="Netcom Training" class="about__badge-icon">
+                            <span>Netcom</span>
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <p class="eyebrow reveal">What I Know</p>
+            <h2 class="section-title reveal">My <span class="grad-text">Toolkit</span></h2>
+            <p class="section-subtitle reveal">Technologies and practices I've worked with across the stack.</p>
+
+            <div class="skills__grid">
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">🎨</div>
+                    <h3 class="skill-card__title">Frontend</h3>
+                    <ul class="skill-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>Responsive Design</li>
+                        <li>UI / UX Design</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">⚙️</div>
+                    <h3 class="skill-card__title">Backend</h3>
+                    <ul class="skill-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>PostgreSQL</li>
+                        <li>REST APIs</li>
+                        <li>JWT Authentication</li>
+                        <li>OAuth</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card__icon">🛠️</div>
+                    <h3 class="skill-card__title">Tools & Practices</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>Jest & TDD</li>
+                        <li>Agile / Scrum</li>
+                        <li>CI/CD</li>
+                        <li>Cloud Deployment</li>
+                        <li>Pair Programming</li>
+                        <li>Code Review</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <p class="eyebrow reveal">What I've Built</p>
+            <h2 class="section-title reveal">Featured <span class="grad-text">Projects</span></h2>
+            <p class="section-subtitle reveal">A selection of work from School of Code and beyond.</p>
+
+            <div class="projects__grid">
+
+                <!-- Featured card -->
+                <article class="proj-card proj-card--featured reveal">
+                    <div class="proj-card__img-wrap">
+                        <img src="images/Projects.png" alt="SnippetSamurai" loading="lazy">
+                        <div class="proj-card__overlay">
+                            <a href="#" class="proj-card__eye" title="View live">↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-card__body">
+                        <span class="proj-card__label">Featured Project</span>
+                        <h3 class="proj-card__title">SnippetSamurai</h3>
+                        <p class="proj-card__desc">A full-stack collaborative platform for saving, tagging and sharing code snippets. Built with a team during School of Code — from user research and wireframes all the way to a deployed product.</p>
+                        <div class="tag-row">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">JWT</span>
+                        </div>
+                        <div class="proj-card__links">
+                            <a href="#" class="btn btn-primary btn-sm">Live Demo ↗</a>
+                            <a href="#" class="btn btn-ghost btn-sm">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="proj-card reveal">
+                    <div class="proj-card__img-wrap proj-card__img-wrap--placeholder">
+                        <span class="proj-emoji">🌦️</span>
+                        <div class="proj-card__overlay">
+                            <a href="#" class="proj-card__eye" title="View live">↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-card__body">
+                        <span class="proj-card__label">Week 2 Project</span>
+                        <h3 class="proj-card__title">Weather Dashboard</h3>
+                        <p class="proj-card__desc">A dynamic weather app fetching live data from OpenWeather API. Handles async operations cleanly and presents conditions in a minimal UI.</p>
+                        <div class="tag-row">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Fetch API</span>
+                            <span class="tag">Async/Await</span>
+                        </div>
+                        <div class="proj-card__links">
+                            <a href="#" class="btn btn-ghost btn-sm">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="proj-card reveal">
+                    <div class="proj-card__img-wrap proj-card__img-wrap--placeholder proj-card__img-wrap--cyan">
+                        <span class="proj-emoji">🔐</span>
+                        <div class="proj-card__overlay">
+                            <a href="#" class="proj-card__eye" title="View live">↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-card__body">
+                        <span class="proj-card__label">Week 10 Project</span>
+                        <h3 class="proj-card__title">Auth REST API</h3>
+                        <p class="proj-card__desc">A secure RESTful API with JWT auth, bcrypt password hashing, protected routes, and full CRUD against a PostgreSQL database.</p>
+                        <div class="tag-row">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="proj-card__links">
+                            <a href="#" class="btn btn-ghost btn-sm">GitHub →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section journey" id="journey">
+        <div class="container">
+            <p class="eyebrow reveal">School of Code</p>
+            <h2 class="section-title reveal">My <span class="grad-text">Journey</span></h2>
+            <p class="section-subtitle reveal">13 weeks. 4 phases. A complete transformation.</p>
+
+            <div class="phase-row reveal">
+                <span class="phase-badge phase-badge--f">Phase 1: Foundations</span>
+                <span class="phase-badge phase-badge--b">Phase 2: Broadening</span>
+                <span class="phase-badge phase-badge--fs">Phase 3: Full-Stack</span>
+                <span class="phase-badge phase-badge--c">Capstone</span>
+            </div>
+
+            <div class="timeline">
+
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 1</span>
+                            <span class="tl-phase tl-phase--f">Foundations</span>
+                        </div>
+                        <h3 class="tl-title">HTML, CSS & JavaScript 101</h3>
+                        <p class="tl-desc">Dived into the building blocks of the web — variables, loops, functions, DOM manipulation, and version control with Git.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">HTML</span>
+                            <span class="tag tag-sm">CSS</span>
+                            <span class="tag tag-sm">JavaScript</span>
+                            <span class="tag tag-sm">Git</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🌱</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">🌐</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 2</span>
+                            <span class="tl-phase tl-phase--f">Foundations</span>
+                        </div>
+                        <h3 class="tl-title">DOM & Fetch API</h3>
+                        <p class="tl-desc">Mastered async JavaScript — Promises, async/await, and the Fetch API. Built dynamic pages that react to real-time data.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">DOM API</span>
+                            <span class="tag tag-sm">Async JS</span>
+                            <span class="tag tag-sm">Promises</span>
+                            <span class="tag tag-sm">Fetch</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 3</span>
+                            <span class="tl-phase tl-phase--b">Broadening</span>
+                        </div>
+                        <h3 class="tl-title">UI/UX Design Thinking</h3>
+                        <p class="tl-desc">Learnt user-centred design, wireframing and prototyping in Figma. Discovered that great software starts with great empathy.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Figma</span>
+                            <span class="tag tag-sm">Wireframing</span>
+                            <span class="tag tag-sm">UX Research</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🎨</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">⚙️</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 4</span>
+                            <span class="tl-phase tl-phase--b">Broadening</span>
+                        </div>
+                        <h3 class="tl-title">Node.js & Express</h3>
+                        <p class="tl-desc">Flipped to the server side — built REST APIs with Express, handled routing, middleware, and environment config.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Node.js</span>
+                            <span class="tag tag-sm">Express</span>
+                            <span class="tag tag-sm">REST</span>
+                            <span class="tag tag-sm">Middleware</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 5</span>
+                            <span class="tl-phase tl-phase--b">Broadening</span>
+                        </div>
+                        <h3 class="tl-title">Databases & PostgreSQL</h3>
+                        <p class="tl-desc">Designed relational schemas, wrote SQL queries, and connected a live database to an Express backend end-to-end.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">PostgreSQL</span>
+                            <span class="tag tag-sm">SQL</span>
+                            <span class="tag tag-sm">Schema Design</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🗄️</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">🧪</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 6</span>
+                            <span class="tl-phase tl-phase--b">Broadening</span>
+                        </div>
+                        <h3 class="tl-title">Testing & TDD</h3>
+                        <p class="tl-desc">Embraced Test-Driven Development — writing unit and integration tests with Jest before touching implementation code.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Jest</span>
+                            <span class="tag tag-sm">TDD</span>
+                            <span class="tag tag-sm">Unit Tests</span>
+                            <span class="tag tag-sm">Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 7</span>
+                            <span class="tl-phase tl-phase--fs">Full-Stack</span>
+                        </div>
+                        <h3 class="tl-title">React Fundamentals</h3>
+                        <p class="tl-desc">Learnt the React mental model — components, JSX, props, state, and the virtual DOM. Built interactive UIs declaratively.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">React</span>
+                            <span class="tag tag-sm">JSX</span>
+                            <span class="tag tag-sm">State</span>
+                            <span class="tag tag-sm">Props</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">⚛️</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">🪝</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 8</span>
+                            <span class="tl-phase tl-phase--fs">Full-Stack</span>
+                        </div>
+                        <h3 class="tl-title">Advanced React</h3>
+                        <p class="tl-desc">Deep-dived into hooks — useState, useEffect, useContext — custom hooks and managing side effects elegantly.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Hooks</span>
+                            <span class="tag tag-sm">useEffect</span>
+                            <span class="tag tag-sm">Context API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 9</span>
+                            <span class="tl-phase tl-phase--fs">Full-Stack</span>
+                        </div>
+                        <h3 class="tl-title">Group Project — SnippetSamurai</h3>
+                        <p class="tl-desc">First team project — built a code snippet platform from scratch. Agile sprints, code review, and real collaborative Git workflows.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">React</span>
+                            <span class="tag tag-sm">Express</span>
+                            <span class="tag tag-sm">PostgreSQL</span>
+                            <span class="tag tag-sm">Agile</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🗡️</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">🔐</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 10</span>
+                            <span class="tl-phase tl-phase--fs">Full-Stack</span>
+                        </div>
+                        <h3 class="tl-title">Authentication & Security</h3>
+                        <p class="tl-desc">Implemented JWT auth, OAuth2 flows, and bcrypt password hashing. Learnt about common web vulnerabilities and how to defend against them.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">JWT</span>
+                            <span class="tag tag-sm">OAuth</span>
+                            <span class="tag tag-sm">bcrypt</span>
+                            <span class="tag tag-sm">Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 11</span>
+                            <span class="tl-phase tl-phase--fs">Full-Stack</span>
+                        </div>
+                        <h3 class="tl-title">Deployment & DevOps</h3>
+                        <p class="tl-desc">Shipped to the cloud. Set up CI/CD pipelines, environment configs, and learnt the joy (and occasional pain) of production deploys.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">CI/CD</span>
+                            <span class="tag tag-sm">Cloud Deploy</span>
+                            <span class="tag tag-sm">Monitoring</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🚀</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">✨</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 12</span>
+                            <span class="tl-phase tl-phase--fs">Full-Stack</span>
+                        </div>
+                        <h3 class="tl-title">SnippetSamurai — Refined</h3>
+                        <p class="tl-desc">Polish sprint — performance improvements, features from user feedback, hardened security model, presented to an industry panel.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Performance</span>
+                            <span class="tag tag-sm">UX Polish</span>
+                            <span class="tag tag-sm">Code Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-card tl-card--cap">
+                        <div class="tl-meta">
+                            <span class="tl-week">Week 13</span>
+                            <span class="tl-phase tl-phase--c">Capstone</span>
+                        </div>
+                        <h3 class="tl-title">Capstone & Graduation</h3>
+                        <p class="tl-desc">Final showcase. Presented work to employers and industry professionals. Graduated as a full-stack developer ready to build real things in the real world.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Full-Stack</span>
+                            <span class="tag tag-sm">Showcase</span>
+                            <span class="tag tag-sm">Graduate 🎓</span>
+                        </div>
+                    </div>
+                    <div class="tl-node tl-node--cap">🎓</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- IBT LEARNING -->
+    <section class="section ibt" id="ibt">
+        <div class="container">
+            <p class="eyebrow reveal">IBT Learning · 2024</p>
+            <h2 class="section-title reveal">UX / UI Design <span class="grad-text">Bootcamp</span></h2>
+            <p class="section-subtitle reveal">A structured deep-dive into user experience and interface design — from research and empathy through to high-fidelity prototypes and a graduation project.</p>
+
+            <div class="phase-row reveal">
+                <span class="phase-badge phase-badge--f">Module 1–2: Foundations</span>
+                <span class="phase-badge phase-badge--b">Module 3: Research</span>
+                <span class="phase-badge phase-badge--fs">Module 4–5: Design</span>
+                <span class="phase-badge phase-badge--c">Module 6: Graduation</span>
+            </div>
+
+            <div class="timeline">
+
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Module 1</span>
+                            <span class="tl-phase tl-phase--f">Foundations</span>
+                        </div>
+                        <h3 class="tl-title">The Basics of UX &amp; UI</h3>
+                        <p class="tl-desc">Explored the what and why of UX/UI — the roles, the people, the process, and the tools. Built a familiarity with the design world before touching a single pixel.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">UX Principles</span>
+                            <span class="tag tag-sm">Design Roles</span>
+                            <span class="tag tag-sm">Process</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🧭</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">🤝</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Module 2</span>
+                            <span class="tl-phase tl-phase--f">Foundations</span>
+                        </div>
+                        <h3 class="tl-title">Approaching Projects</h3>
+                        <p class="tl-desc">Learnt how to read a brief, define project scope, and collaborate effectively in teams. First hands-on time with Miro for ideation and Figma for design.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Briefs &amp; Scope</span>
+                            <span class="tag tag-sm">Miro</span>
+                            <span class="tag tag-sm">Figma</span>
+                            <span class="tag tag-sm">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Module 3</span>
+                            <span class="tl-phase tl-phase--b">Research</span>
+                        </div>
+                        <h3 class="tl-title">Research Methods</h3>
+                        <p class="tl-desc">Conducted desk research, comparative analyses, and design audits. Applied heuristic evaluation and platform guidelines (HIG / Material Design). Built personas from user interviews and surveys, then synthesised findings into actionable insights.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">User Interviews</span>
+                            <span class="tag tag-sm">Personas</span>
+                            <span class="tag tag-sm">Heuristics</span>
+                            <span class="tag tag-sm">Surveys</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🔍</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">🗺️</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Module 4</span>
+                            <span class="tl-phase tl-phase--fs">UX Design</span>
+                        </div>
+                        <h3 class="tl-title">UX Design</h3>
+                        <p class="tl-desc">Learnt to design with empathy and applied the Laws of UX. Mapped out information architecture, journey maps, user flows, and feature lists — then progressed from rough sketches to lo-fi and hi-fi wireframes.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Wireframes</span>
+                            <span class="tag tag-sm">User Flows</span>
+                            <span class="tag tag-sm">IA</span>
+                            <span class="tag tag-sm">Laws of UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">Module 5</span>
+                            <span class="tl-phase tl-phase--fs">UI Design</span>
+                        </div>
+                        <h3 class="tl-title">Visual &amp; UI Design</h3>
+                        <p class="tl-desc">Dived into the craft of visual design — colour theory and psychology, typography, iconography, and illustration. Turned UX wireframes into polished, UI-ready screens.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Colour Theory</span>
+                            <span class="tag tag-sm">Typography</span>
+                            <span class="tag tag-sm">Iconography</span>
+                            <span class="tag tag-sm">Figma</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🎨</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-card tl-card--cap">
+                        <div class="tl-meta">
+                            <span class="tl-week">Module 6</span>
+                            <span class="tl-phase tl-phase--c">Graduation</span>
+                        </div>
+                        <h3 class="tl-title">Graduation Project</h3>
+                        <p class="tl-desc">Applied everything across all six modules to a self-directed final project — full research, UX flows, and a polished UI prototype showcased as a portfolio piece.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Figma</span>
+                            <span class="tag tag-sm">User Research</span>
+                            <span class="tag tag-sm">Prototyping</span>
+                            <span class="tag tag-sm">Graduate 🎓</span>
+                        </div>
+                    </div>
+                    <div class="tl-node tl-node--cap">🎓</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NETCOM TRAINING -->
+    <section class="section netcom" id="netcom">
+        <div class="container">
+            <p class="eyebrow reveal">Netcom Training · Feb – Apr 2025</p>
+            <h2 class="section-title reveal">Intel: AI for the <span class="grad-text">Current Workforce</span></h2>
+            <p class="section-subtitle reveal">A three-level programme covering AI fundamentals, hands-on technical modules, and entrepreneurial venture-building skills.</p>
+
+            <div class="phase-row reveal">
+                <span class="phase-badge phase-badge--f">Level 100: Foundations</span>
+                <span class="phase-badge phase-badge--b">Level 200: Technical</span>
+                <span class="phase-badge phase-badge--fs">Level 300: Venture</span>
+            </div>
+
+            <div class="timeline">
+
+                <!-- L100 #1 -->
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">L100 · 1–2</span>
+                            <span class="tl-phase tl-phase--f">Foundations</span>
+                        </div>
+                        <h3 class="tl-title">AI in Business &amp; Project Initialisation</h3>
+                        <p class="tl-desc">Explored how AI is reshaping industries and learned how to frame, scope, and kick off an AI project from a business perspective.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">AI Strategy</span>
+                            <span class="tag tag-sm">Project Scoping</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🤖</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <!-- L100 #2 -->
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">📊</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">L100 · 3–5</span>
+                            <span class="tl-phase tl-phase--f">Foundations</span>
+                        </div>
+                        <h3 class="tl-title">Data Analysis, ML &amp; Deep Learning</h3>
+                        <p class="tl-desc">Introduction to data analysis pipelines, the fundamentals of machine learning models, and how deep neural networks learn from data.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Data Analysis</span>
+                            <span class="tag tag-sm">Machine Learning</span>
+                            <span class="tag tag-sm">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- L100 #3 -->
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">L100 · 6–7</span>
+                            <span class="tl-phase tl-phase--f">Foundations</span>
+                        </div>
+                        <h3 class="tl-title">Generative AI &amp; Prompt Engineering</h3>
+                        <p class="tl-desc">Learned how generative models work and how to craft effective prompts to get reliable, high-quality outputs from AI systems.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Generative AI</span>
+                            <span class="tag tag-sm">Prompt Engineering</span>
+                            <span class="tag tag-sm">LLMs</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">✨</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <!-- L100 #4 -->
+                <div class="tl-item tl-item--r reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node">📈</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">L100 · 8–10</span>
+                            <span class="tl-phase tl-phase--f">Foundations</span>
+                        </div>
+                        <h3 class="tl-title">AI Project Building, Data Visualisation &amp; Business Proposal</h3>
+                        <p class="tl-desc">Built an end-to-end AI project, visualised results for business stakeholders, and produced a formal AI Business Project Proposal.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">AI Projects</span>
+                            <span class="tag tag-sm">Data Viz</span>
+                            <span class="tag tag-sm">Business Case</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- L200 #1 — completed -->
+                <div class="tl-item reveal">
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-week">L200 · PF 1–4</span>
+                            <span class="tl-phase tl-phase--b">Technical</span>
+                        </div>
+                        <h3 class="tl-title">Programming Fundamentals 1–4</h3>
+                        <p class="tl-desc">Covered core programming concepts applied to AI workflows — variables, data structures, control flow, and functions in Python.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">Programming</span>
+                            <span class="tag tag-sm">Data Structures</span>
+                        </div>
+                    </div>
+                    <div class="tl-node">🐍</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <!-- L200 #2 — CURRENT -->
+                <div class="tl-item tl-item--r tl-item--current reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node tl-node--current">📍</div>
+                    <div class="tl-card tl-card--current">
+                        <div class="tl-current-label">← Currently Here</div>
+                        <div class="tl-meta">
+                            <span class="tl-week">L200 · PF 5</span>
+                            <span class="tl-phase tl-phase--b">Technical</span>
+                        </div>
+                        <h3 class="tl-title">Programming Fundamentals 5</h3>
+                        <p class="tl-desc">Advanced programming patterns and techniques — working towards completing the full programming fundamentals series.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Python</span>
+                            <span class="tag tag-sm">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- L200 #3 — pending -->
+                <div class="tl-item tl-item--pending reveal">
+                    <div class="tl-card tl-card--pending">
+                        <div class="tl-meta">
+                            <span class="tl-week">L200 · CV 1–6</span>
+                            <span class="tl-phase tl-phase--b">Technical</span>
+                        </div>
+                        <h3 class="tl-title">Computer Vision 1–6</h3>
+                        <p class="tl-desc">Six-part series covering image recognition, object detection, and building CV models for real-world applications.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Computer Vision</span>
+                            <span class="tag tag-sm">Image Recognition</span>
+                            <span class="tag tag-sm">Pending</span>
+                        </div>
+                    </div>
+                    <div class="tl-node tl-node--pending">👁️</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <!-- L200 #4 — pending -->
+                <div class="tl-item tl-item--r tl-item--pending reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node tl-node--pending">💬</div>
+                    <div class="tl-card tl-card--pending">
+                        <div class="tl-meta">
+                            <span class="tl-week">L200 · NLP 1–7</span>
+                            <span class="tl-phase tl-phase--b">Technical</span>
+                        </div>
+                        <h3 class="tl-title">Natural Language Processing 1–7</h3>
+                        <p class="tl-desc">Seven-part series exploring text analysis, sentiment analysis, language models, and building NLP-powered applications.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">NLP</span>
+                            <span class="tag tag-sm">Text Analysis</span>
+                            <span class="tag tag-sm">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- L200 #5 — pending -->
+                <div class="tl-item tl-item--pending reveal">
+                    <div class="tl-card tl-card--pending">
+                        <div class="tl-meta">
+                            <span class="tl-week">L200 · IoT 1–2</span>
+                            <span class="tl-phase tl-phase--b">Technical</span>
+                        </div>
+                        <h3 class="tl-title">Internet of Things 1–2</h3>
+                        <p class="tl-desc">Connecting AI to the physical world — sensors, devices, and integrating IoT data into AI-driven systems.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">IoT</span>
+                            <span class="tag tag-sm">Sensors</span>
+                            <span class="tag tag-sm">Pending</span>
+                        </div>
+                    </div>
+                    <div class="tl-node tl-node--pending">📡</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <!-- L300 #1 — pending -->
+                <div class="tl-item tl-item--r tl-item--pending reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node tl-node--pending">💡</div>
+                    <div class="tl-card tl-card--pending">
+                        <div class="tl-meta">
+                            <span class="tl-week">L300 · 1–2</span>
+                            <span class="tl-phase tl-phase--fs">Venture</span>
+                        </div>
+                        <h3 class="tl-title">Generating AI Business Ideas &amp; Customer Discovery</h3>
+                        <p class="tl-desc">Ideate viable AI ventures and validate them by listening to prospective customers to understand real problems worth solving.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Ideation</span>
+                            <span class="tag tag-sm">Customer Discovery</span>
+                            <span class="tag tag-sm">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- L300 #2 — pending -->
+                <div class="tl-item tl-item--pending reveal">
+                    <div class="tl-card tl-card--pending">
+                        <div class="tl-meta">
+                            <span class="tl-week">L300 · 3–4</span>
+                            <span class="tl-phase tl-phase--fs">Venture</span>
+                        </div>
+                        <h3 class="tl-title">MVP Testing &amp; Business Model</h3>
+                        <p class="tl-desc">Test a Minimal Viable Product with real users and build out a sustainable business model around the AI venture.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">MVP</span>
+                            <span class="tag tag-sm">Business Model</span>
+                            <span class="tag tag-sm">Pending</span>
+                        </div>
+                    </div>
+                    <div class="tl-node tl-node--pending">🧪</div>
+                    <div class="tl-spacer"></div>
+                </div>
+
+                <!-- L300 #3 — pending cap -->
+                <div class="tl-item tl-item--r tl-item--pending reveal">
+                    <div class="tl-spacer"></div>
+                    <div class="tl-node tl-node--pending">🚀</div>
+                    <div class="tl-card tl-card--pending">
+                        <div class="tl-meta">
+                            <span class="tl-week">L300 · 5–6</span>
+                            <span class="tl-phase tl-phase--fs">Venture</span>
+                        </div>
+                        <h3 class="tl-title">Venture Funding &amp; Pitching</h3>
+                        <p class="tl-desc">Explore funding options and financing strategies, then deliver a compelling pitch for the AI venture to investors and stakeholders.</p>
+                        <div class="tag-row">
+                            <span class="tag tag-sm">Fundraising</span>
+                            <span class="tag tag-sm">Pitching</span>
+                            <span class="tag tag-sm">Pending</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .netcom { background: var(--bg-0); }
+
+        /* Current position */
+        .tl-card--current {
+            border-color: var(--cyan) !important;
+            box-shadow: 0 0 0 1px var(--cyan), 0 0 24px rgba(34,211,238,0.2);
+            position: relative;
+        }
+        .tl-node--current {
+            background: linear-gradient(135deg, var(--cyan), var(--violet)) !important;
+            box-shadow: 0 0 0 4px rgba(34,211,238,0.25), 0 0 20px rgba(34,211,238,0.4) !important;
+            animation: pulse-current 2s ease-in-out infinite;
+        }
+        @keyframes pulse-current {
+            0%, 100% { box-shadow: 0 0 0 4px rgba(34,211,238,0.25), 0 0 20px rgba(34,211,238,0.4); }
+            50%       { box-shadow: 0 0 0 8px rgba(34,211,238,0.15), 0 0 36px rgba(34,211,238,0.6); }
+        }
+        .tl-current-label {
+            display: inline-block;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: var(--cyan);
+            background: rgba(34,211,238,0.12);
+            border: 1px solid rgba(34,211,238,0.35);
+            border-radius: 4px;
+            padding: 0.2rem 0.6rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Pending / greyed out */
+        .tl-card--pending {
+            opacity: 0.45;
+            border-style: dashed !important;
+        }
+        .tl-node--pending {
+            opacity: 0.35;
+            filter: grayscale(1);
+        }
+    </style>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact__inner reveal">
+                <p class="eyebrow">Get In Touch</p>
+                <h2 class="section-title">Let's build something <span class="grad-text">together</span></h2>
+                <p class="contact__text">I'm open to new opportunities — full-time roles, freelance projects, or just a good conversation. Drop me a message.</p>
+                <button onclick="document.getElementById('email-modal').classList.add('is-open')" class="btn btn-primary btn-lg">Say Hello ↗</button>
+                <div class="socials">
+                    <a href="https://github.com/Esva" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/chris-chapman-b4747a3b0/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="#" onclick="event.preventDefault();document.getElementById('email-modal').classList.add('is-open')" class="social-link" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <a href="#hero" class="footer__logo">Chris 'CJ' Chapman<span class="accent-dot">.</span></a>
+            <p class="footer__copy">Designed &amp; built by Chris 'CJ' Chapman</p>
+            <a href="#hero" class="footer__top">↑ Top</a>
+        </div>
+    </footer>
+
+    <!-- EMAIL MODAL -->
+    <div id="email-modal" class="email-modal-overlay" role="dialog" aria-modal="true" aria-label="Email address">
+        <div class="email-modal">
+            <button class="email-modal__close" onclick="document.getElementById('email-modal').classList.remove('is-open')" aria-label="Close">✕</button>
+            <p class="eyebrow">Get In Touch</p>
+            <p class="email-modal__address">esvagaming@gmail.com</p>
+            <button class="btn btn-primary" id="copy-email-btn" onclick="navigator.clipboard.writeText('esvagaming@gmail.com').then(()=>{const b=document.getElementById('copy-email-btn');b.textContent='Copied!';setTimeout(()=>b.textContent='Copy Address',2000)})">Copy Address</button>
+        </div>
+    </div>
+
+    <style>
+        .email-modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(6px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        .email-modal-overlay.is-open { display: flex; }
+        .email-modal {
+            background: var(--bg-2);
+            border: 1px solid var(--border-a);
+            border-radius: 16px;
+            padding: 2.5rem 3rem;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 0 60px rgba(139,92,246,0.25);
+        }
+        .email-modal__close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--text-2);
+            font-size: 1rem;
+            cursor: pointer;
+            line-height: 1;
+            padding: 0.25rem 0.5rem;
+        }
+        .email-modal__close:hover { color: var(--text-1); }
+        .email-modal__address {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-1);
+            margin: 0.75rem 0 1.5rem;
+            letter-spacing: 0.01em;
+        }
+    </style>
+
+    <script>
+        document.getElementById('email-modal').addEventListener('click', function(e) {
+            if (e.target === this) this.classList.remove('is-open');
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('email-modal').classList.remove('is-open');
+        });
+    </script>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
