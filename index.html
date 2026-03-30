@@ -288,8 +288,14 @@
                         <img src="images/companion-cove-logo.png" alt="Companion Cove" class="proj-card__logo-overlay">
                     </div>
                     <div class="proj-card__body">
-                        <span class="proj-card__label proj-card__label--dev">In Development</span>
-                        <h3 class="proj-card__title">Companion Cove</h3>
+                        <div class="proj-card__label-row">
+                            <span class="proj-card__label proj-card__label--dev">In Development</span>
+                            <span class="proj-card__version">v0.10</span>
+                        </div>
+                        <div class="proj-card__title-row">
+                            <h3 class="proj-card__title">Companion Cove</h3>
+                            <button class="btn btn-ghost btn-sm cc-sneak-btn" onclick="document.getElementById('cc-gallery').classList.add('is-open')">Sneak Peek ✦</button>
+                        </div>
                         <p class="proj-card__desc">A local-first AI companion app that runs entirely on your own machine — no subscriptions, no cloud. Chat with customisable AI characters powered by Ollama, with optional voice via Kokoro TTS, voice input via faster-whisper, and AI-generated character images through InvokeAI.</p>
                         <div class="tag-row">
                             <span class="tag">SvelteKit</span>
@@ -1106,6 +1112,32 @@
     </footer>
 
     
+    <!-- Companion Cove Gallery Modal -->
+    <div id="cc-gallery" class="cc-gallery-overlay" role="dialog" aria-modal="true" aria-label="Companion Cove Sneak Peek">
+        <div class="cc-gallery__panel">
+            <button class="cc-gallery__close" onclick="ccGalleryClose()" aria-label="Close">✕</button>
+            <div class="cc-gallery__header">
+                <p class="eyebrow">Companion Cove</p>
+                <h3 class="cc-gallery__title">Sneak Peek</h3>
+                <p class="cc-gallery__note">These screenshots and footage are from <strong>v0.05</strong> — an early stage of development. The UI, features, and visuals have evolved significantly since then.</p>
+            </div>
+            <div class="cc-gallery__grid">
+                <figure class="cc-gallery__item">
+                    <img src="images/CompCove/Character-Selection.png" alt="Character Selection screen" loading="lazy">
+                    <figcaption>Character Selection <span class="cc-gallery__ver">v0.05</span></figcaption>
+                </figure>
+                <figure class="cc-gallery__item">
+                    <img src="images/CompCove/LiveCall-Modal.png" alt="Live Call modal" loading="lazy">
+                    <figcaption>Live Call Modal <span class="cc-gallery__ver">v0.05</span></figcaption>
+                </figure>
+                <figure class="cc-gallery__item cc-gallery__item--video">
+                    <video src="images/CompCove/Early-Test.mp4" controls muted loop playsinline></video>
+                    <figcaption>Early Gameplay Test <span class="cc-gallery__ver">v0.05</span></figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
     <div id="email-modal" class="email-modal-overlay" role="dialog" aria-modal="true" aria-label="Email address">
         <div class="email-modal">
             <button class="email-modal__close" onclick="document.getElementById('email-modal').classList.remove('is-open')" aria-label="Close">✕</button>
@@ -1158,12 +1190,140 @@
         }
     </style>
 
+    <style>
+        /* Companion Cove card tweaks */
+        .proj-card__label-row {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.5rem;
+        }
+        .proj-card__title-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+        .proj-card__title-row .proj-card__title { margin: 0; }
+        .cc-sneak-btn { white-space: nowrap; flex-shrink: 0; }
+        .proj-card__version {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--text-2);
+            background: rgba(255,255,255,0.06);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 0.15rem 0.45rem;
+            letter-spacing: 0.04em;
+        }
+
+        /* CC Gallery Modal */
+        .cc-gallery-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .cc-gallery-overlay.is-open { display: flex; }
+        .cc-gallery__panel {
+            background: var(--bg-2);
+            border: 1px solid var(--border-a);
+            border-radius: 16px;
+            padding: 2rem 2rem 2.5rem;
+            max-width: 860px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 0 80px rgba(124,58,237,0.2);
+        }
+        .cc-gallery__close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--text-2);
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0.25rem 0.5rem;
+            line-height: 1;
+        }
+        .cc-gallery__close:hover { color: var(--text-1); }
+        .cc-gallery__header { margin-bottom: 1.5rem; }
+        .cc-gallery__title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-1);
+            margin: 0.25rem 0 0.75rem;
+        }
+        .cc-gallery__note {
+            font-size: 0.85rem;
+            color: var(--text-2);
+            line-height: 1.6;
+            border-left: 3px solid var(--violet);
+            padding-left: 0.75rem;
+        }
+        .cc-gallery__grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .cc-gallery__item--video {
+            grid-column: 1 / -1;
+        }
+        .cc-gallery__item {
+            margin: 0;
+        }
+        .cc-gallery__item img,
+        .cc-gallery__item video {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+            border: 1px solid var(--border);
+        }
+        .cc-gallery__item figcaption {
+            font-size: 0.78rem;
+            color: var(--text-2);
+            margin-top: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .cc-gallery__ver {
+            font-size: 0.7rem;
+            color: var(--violet);
+            background: rgba(124,58,237,0.12);
+            border: 1px solid rgba(124,58,237,0.25);
+            border-radius: 4px;
+            padding: 0.1rem 0.35rem;
+        }
+    </style>
+
     <script>
+        function ccGalleryClose() {
+            const el = document.getElementById('cc-gallery');
+            el.classList.remove('is-open');
+            el.querySelector('video').pause();
+        }
+        document.getElementById('cc-gallery').addEventListener('click', function(e) {
+            if (e.target === this) ccGalleryClose();
+        });
+
         document.getElementById('email-modal').addEventListener('click', function(e) {
             if (e.target === this) this.classList.remove('is-open');
         });
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') document.getElementById('email-modal').classList.remove('is-open');
+            if (e.key === 'Escape') {
+                document.getElementById('email-modal').classList.remove('is-open');
+                ccGalleryClose();
+            }
         });
     </script>
 
