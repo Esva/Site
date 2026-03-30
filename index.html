@@ -302,9 +302,10 @@
                 </article>
 
                 
-                <article class="proj-card reveal">
+                <article class="proj-card proj-card--nasa reveal">
                     <div class="proj-card__img-wrap">
-                        <img src="images/NasaExplorer-Thumb.png" alt="NASA Explorer" loading="lazy">
+                        <img src="images/NasaExplorer-Thumb.png" alt="NASA Explorer" loading="lazy" class="proj-card__thumb">
+                        <video class="proj-card__hover-video" src="images/NASA-bkg.webm" muted loop playsinline preload="none"></video>
                     </div>
                     <div class="proj-card__body">
                         <h3 class="proj-card__title">NASA Explorer</h3>
@@ -353,6 +354,9 @@
                             <span class="tag">UX/UI Design</span>
                             <span class="tag">Figma</span>
                             <span class="tag">Prototyping</span>
+                        </div>
+                        <div class="proj-card__links">
+                            <a href="https://1source.netlify.app/" class="btn btn-ghost btn-sm" target="_blank" rel="noopener noreferrer">View Demo →</a>
                         </div>
                     </div>
                 </article>
@@ -1270,5 +1274,14 @@
     </script>
 
     <script src="js/app.js"></script>
+
+    <script>
+        const nasaCard = document.querySelector('.proj-card--nasa');
+        if (nasaCard) {
+            const video = nasaCard.querySelector('.proj-card__hover-video');
+            nasaCard.addEventListener('mouseenter', () => { video.play(); });
+            nasaCard.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
+        }
+    </script>
 </body>
 </html>
