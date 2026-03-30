@@ -784,7 +784,7 @@ ul { list-style: none; }
 .proj-card__logo-overlay {
     position: relative;
     z-index: 1;
-    width: clamp(160px, 55%, 260px);
+    width: clamp(100px, 38%, 160px);
     object-fit: contain;
     drop-shadow: 0 4px 24px rgba(0,0,0,0.6);
     filter: drop-shadow(0 4px 24px rgba(0,0,0,0.7));
