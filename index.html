@@ -1489,10 +1489,10 @@
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2026/04/15/17/20260415173706-QWOK2Y48.js" defer></script>
     <script>
+        var _chatGreeted = false;
         window.botpress.on('webchat:ready', function () {
-            const key = 'bp_greeted';
-            if (!sessionStorage.getItem(key)) {
-                sessionStorage.setItem(key, '1');
+            if (!_chatGreeted) {
+                _chatGreeted = true;
                 window.botpress.sendMessage('👋');
             }
         });
