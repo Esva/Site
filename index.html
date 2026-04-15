@@ -1490,15 +1490,19 @@
     <script src="https://files.bpcontent.cloud/2026/04/15/17/20260415173706-QWOK2Y48.js" defer></script>
     <script>
         window.addEventListener('load', function () {
-            if (window.botpress && window.botpress.config) {
-                window.botpress.config({
-                    color: '#7c3aed',
-                    themeMode: 'dark',
-                    variant: 'solid',
-                    borderRadius: 'medium',
-                    fontFamily: 'inter',
-                });
-            }
+            if (!window.botpress) return;
+
+            // Fire a silent "start" message the first time the chat opens
+            // so the bot sends its greeting with choice buttons
+            botpress.on('webchat:opened', function () {
+                const key = 'bp_greeted';
+                if (!sessionStorage.getItem(key)) {
+                    sessionStorage.setItem(key, '1');
+                    setTimeout(function () {
+                        botpress.sendMessage({ type: 'text', payload: { text: 'hi' } });
+                    }, 400);
+                }
+            });
         });
     </script>
 </body>
