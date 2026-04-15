@@ -1488,5 +1488,18 @@
     <!-- Botpress CJs-Agent Webchat -->
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2026/04/15/17/20260415173706-QWOK2Y48.js" defer></script>
+    <script>
+        window.addEventListener('load', function () {
+            if (window.botpress && window.botpress.config) {
+                window.botpress.config({
+                    color: '#7c3aed',
+                    themeMode: 'dark',
+                    variant: 'solid',
+                    borderRadius: 'medium',
+                    fontFamily: 'inter',
+                });
+            }
+        });
+    </script>
 </body>
 </html>
